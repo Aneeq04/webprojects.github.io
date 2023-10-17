@@ -17,7 +17,9 @@ body {
     background: url("/0main.jpg") no-repeat center center/cover;
 
 }
-
+.head::after {
+    content:"this is huzaima";
+}
 
 
 .cont {
