@@ -79,6 +79,9 @@ body {
         height: 60vh;
       width: 90vw;
         margin: 50px 5px;
+        display: flex;
+    justify-content: center;
+    align-items: center;
     }
 
     .explain {
