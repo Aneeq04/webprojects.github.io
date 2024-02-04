@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stand with imran khan</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: wheat;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: palevioletred; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('bd.jpg') no-repeat center center/cover;
+    /* filter: blur(10px); */
+    z-index: -10px;
+}
+.wrapper{
+    background: url('bd.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    border: 2px solid wheat;
+    border-radius: 10px;
+    padding: 2px;
+}
+.head>h2{
+    width: max-content;
+    margin: 0px auto;
+    margin-top: 5%;
+    /* border: 2px solid gray; */
+    font-size: 2rem;
+    padding: 20px;
+}
+.head>p{
+    font-size: 2rem;
+    width: max-content;
+    margin: 0px auto;
+}
+.maindiv{
+    z-index: +2px;
+    border-radius: 10px;
+    width: 80%;
+    height: 70%;
+    margin: auto ;
+    border: 2px solid wheat;
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    /* background: url('bd.jpg') no-repeat center center/cover; */
+    background-color: transparent;
+    overflow: hidden;
+}
+h2{
+    font-size: 2rem;
+}
+.img{
+    border: 2px solid black;
+    width: 350px;
+    height: 250px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+.img>img{
+    width: 100%;
+}
+
+.buttons{}
+.btn{
+    z-index: +2;
+    /* width: 10%; */
+    height: 50px;
+    outline: none;
+    /* box-shadow: inset 2px 2px 2px black ; */
+    filter: drop-shadow(inset 5px 5px 5px black ) ;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: all 1s ease;
+    filter: invert(20%);
+}
+#yes{
+    background-color: green;
+    color: white;
+    /* width: 100px;
+    height: 50px; */
+    padding: 10px 20px;
+    
+}
+#no{
+    background-color: red;
+    color: white;
+}
+.notext{
+    width: 100px;
+    padding: 10px 20px;
+
+}
+.btn:hover{
+    /* width: 200px; */
+   filter: invert(0%);
+}
+
+/* .okcont{
+    height: 100vh;
+    width: 100vw;
+} */
+.ok{
+    float: left;
+    position: absolute;
+    top: 15%;
+    left: 26%;
+    z-index: +2;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 50%;
+    height: max-content;
+    padding: 10px 70px;    
+    backdrop-filter: blur(20px);
+
+    display: none;
+    
+}
+
+.ok h2{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    margin: 20px auto;
+    margin-top: 100px;
+}
+.ok p{
+    color: white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+}
+.ok #close{
+    margin: 40px 42%;    
+    padding: 10px;
+    background-color: green;
+
+}
+
+
+@media  screen and (max-width:1000px) {
+    *{
+        /* background-color: red; */
+    }
+		.wrapper{
+				height: max-content;
+		}
+    .head>h2{
+        width: 95vw;
+        padding: 20px;
+        margin: auto;
+    }
+    .head>p{
+        font-size: 1rem;
+        width: max-content;
+        margin: 0px auto;
+    }
+		.maindiv{
+				width:100vw;
+				height:max-content;
+				
+		}
+    .ok{
+        
+        left: 2.5%;
+        width: 95vw;
+        /* margin: auto; */
+
+    }
+    .ok h2{
+        font-size: 3rem;
+    }
+
+    .imi{
+        /* width: 100px; */
+
+    }
+    .imi>img{
+    }
+    .ok #close{
+        margin: 20px 30%;
+
+    }
+
+@media  screen and (max-width:500px) {
+    *{
+        /* background-color: red; */
+    }
+    .head>h2{
+        width: 95vw;
+        padding: 20px;
+        margin: auto;
+    }
+    .head>p{
+        font-size: 0.9rem;
+        width: max-content;
+        margin: 0px auto;
+    }
+	
+    .ok{
+        
+        left: 2.5%;
+        width: 95vw;
+        /* margin: auto; */
+
+    }
+    .ok h2{
+        font-size: 2rem;
+    }
+
+    .imi{
+         width: 200px; 
+    		height: 150px
+
+    }
+    .imi>img{
+    }
+    .ok #close{
+        margin: 20px 30%;
+
+    }
+
+    
+} 
+
+    </style>
+</head>
+
+
+<body>
+   <div class="main"> 
+    <div class="wrapper">
+        <div class="head">
+            <h2>WELCOME!</h2>
+            <P>WE HOPE YOU CAN CHOOSE BETTER NOT BITTER....</P>
+        </div>
+        <div class="maindiv">
+            <div class="top">
+                <span class="name"><h2> </h2></span><h2>ARE YOU WANT TO STAND WITH ME?</h2>
+            </div>
+            <div class="img"><img width="300" src="pmik.jpg" alt="gif"></div>
+            <div class="buttons">
+                <button class="btn" id="yes">YES</button>
+                <button class="btn" id="no"><span class="notext">NO </span></button>
+                
+            </div>
+        </div> <!-- main div ends-->
+        <div class="okcont">
+
+            <div class="ok">
+                    <h2>Thank You!</h2>
+                    <div class="img imi"><img src="ik2.jpg" alt="imran khan" srcset=""></div>    
+                <button class="btn" id="close">CLOSE</button>
+            </div>
+        </div>
+    </div>
+    <div class="stars">
+
+    </div>
+   </div>
+
+    <script src="script.js"></script>
+    <script>
+
+let btn = document.querySelector(".btn");
+let yes = document.querySelector("#yes");
+let no = document.querySelector("#no");
+let notext = document.querySelector(".notext");
+let ok = document.querySelector(".ok");
+let close = document.querySelector('#close');
+
+let ih = 50 ;
+// let ih = btn.style.height ;
+// let iw = btn.style.width ;
+let iw = 100 ;
+
+let quets = [
+    "Are you sure!",
+    "Really sure!",
+    "Think again!",
+    "Last chance!",
+    "Surely not?",
+    "You might regret this!",
+    "Give it another thought!",
+    "Are you absolutely certain?",
+    "This could be a mistake!",
+    "Have a heart!",
+    "Don't be so cold!",
+    "You're breaking my heart!",
+    "Ja ja tur ja ",
+];
+
+let i=0;
+let len = quets.length;
+
+/////////////////////////////////////////////////////////////
+no.addEventListener('click',()=>{
+    
+    notext.innerHTML = quets[i];
+    btn.style.width = "maxContent"
+    i++;
+    if(i>=len){i=0}
+    
+    ih = ih + 30;
+    yes.style.height= ih+'px';
+    
+    iw = iw + 10;
+    yes.style.width = iw+'px';         
+    console.log("width= "+iw);
+    console.log("height= "+ih);
+})
+
+yes.addEventListener("click",()=>{
+    console.log('"YES" is clicked');
+    i=0;
+    ih = 50 ;
+    iw = 100 ;
+    notext.innerHTML = "NO"
+    yes.style.height= ih+'px';
+    yes.style.width = iw+'px';         
+    ok.style.display = "Block"
+
+})
+/////////////////////////////////////////////////////////////
+close.addEventListener('click',function hide() {
+    // );
+    
+    // function hide() 
+        ok.style.display = "none";
+        console.log('asfd');
+    });
+    </script>
+</body>
+</html>
